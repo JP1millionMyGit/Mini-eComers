@@ -1,0 +1,16 @@
+button{
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    text-wrap: nowrap;
+}
+
+.content{
+    display: flex;
+    gap: 2px;
+}
+

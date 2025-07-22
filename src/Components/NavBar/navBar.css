@@ -1,0 +1,75 @@
+.links{
+  display: flex;
+  gap: 5px;
+  padding-left: 5px;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.links::-webkit-scrollbar{
+  height: 0;
+}
+
+.navBar-main{
+  background-color: #D4AF37;
+  min-height: 40px;
+  position: relative;
+}
+
+.sub-navBar-main{
+  display: flex;
+  padding-inline: 5px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30px;
+  background-color: #C9A32a;
+  gap: 10px;
+}
+
+.actions{
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.IconMenu-Logo{
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+  gap: 5px;
+}
+
+.IconMenu-Logo img{
+  aspect-ratio: 16/9;
+  background-color: #957612;
+  width: 64px;
+  border-radius: 5px;
+}
+
+.icon-menu{
+  background-color: #957612;
+  border-radius: 5px;
+}
+
+.icon-search{
+  flex-grow: 1;
+}
+
+.div-icon-cart{
+  position: relative;
+}
+
+.div-icon-cart label{
+  position: absolute;
+  right: 0;
+  padding-inline: 2px;
+  border-radius: 10px;
+  height: fit-content;
+  background-color: #ffaa00;
+}
+
+.cantidad-products{
+  user-select: none;
+}

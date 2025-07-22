@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#root{
+    position: relative;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+#modal{
+    position: absolute;
+    top: 0;
+    background-color: #0005;
+    backdrop-filter: blur(1px);
+}
+
+.cart-vacio{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+img{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    border-bottom: 1px solid transparent;
+    -webkit-tap-highlight-color: #95761255;
+}
+
+a:hover:active{
+    border-bottom: 1px solid currentColor;
+}
+
+ul{
+    list-style: none;
+}

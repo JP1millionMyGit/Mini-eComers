@@ -1,0 +1,1 @@
+export {default as useCustomFetch} from './useCustomFetch/useCustomFetch'

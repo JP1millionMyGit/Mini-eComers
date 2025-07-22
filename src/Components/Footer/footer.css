@@ -1,0 +1,45 @@
+.content-footer-main{
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: #af8b15;
+  background-image: url('Logo.png');
+  background-size: cover;
+  display: grid;
+  grid-template-columns: auto;
+  overflow: auto;
+  grid-auto-flow: column;
+  gap: 10px;
+  padding-block: 10px;
+}
+
+.footer-main{
+  position: relative;
+  aspect-ratio: 16/9;
+  bottom: 0;
+  margin-top: 37px;
+}
+
+.footer-main-section{
+  height: 100%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-main-section a{
+  font-size: .8em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: .2px;
+  text-wrap: nowrap;
+  margin: 8px;
+  color: currentColor;
+  text-shadow: 0 0 .3px #000;
+  width: fit-content;
+}
+
+.footer-main-section a:active{
+  background-color: #0005;
+}

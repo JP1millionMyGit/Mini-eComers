@@ -1,0 +1,23 @@
+.loader{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 100px;
+    display: flex;
+    height: fit-content;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #745d10;
+}
+
+.img>img{
+    object-fit: contain;
+    aspect-ratio: 1;
+    margin: auto;
+}
