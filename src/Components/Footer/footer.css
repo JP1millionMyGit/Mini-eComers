@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100%;
   background-color: #af8b15;
-  background-image: url('Logo.png');
+  background-image: url('../Logo.png');
   background-size: cover;
   display: grid;
   grid-template-columns: auto;
@@ -11,6 +11,10 @@
   grid-auto-flow: column;
   gap: 10px;
   padding-block: 10px;
+}
+
+.content-footer-main::-webkit-scrollbar{
+  height: 0;
 }
 
 .footer-main{
