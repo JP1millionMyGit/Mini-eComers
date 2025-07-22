@@ -4,6 +4,7 @@ import { Footer, Loader, Menu, NavBar, Portal } from './Components'
 import { useContext, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ProductContext } from './Context';
+import { useMediaQuery } from './Hooks';
 
 const Div = motion.create('div')
 
@@ -11,6 +12,7 @@ const Div = motion.create('div')
 function App() {
   const { loading, error } = useContext(ProductContext);
   const [menu, setMenu] = useState(false);
+  const isMobile = useMediaQuery('(max-width: 550px)')
 
   if(menu) document.body.classList.add('no-scroll')
   else document.body.classList.remove('no-scroll');
@@ -29,9 +31,9 @@ function App() {
           {
             menu && 
             <Div
-              initial={{x: -400}}
-              animate={{x: 0}}
-              exit={{x: -500}}
+              initial={isMobile? { x: '-100%' }: { y: '100%' }}
+              animate={isMobile? { x: 0 }: { y: 0 }}
+              exit={isMobile? { x: '-100%' }: { y: '100%' }}
               transition={{ease: 'linear'}}
             >
               <Menu 
@@ -62,9 +64,5 @@ function App() {
     </>
   )
 }
-
-// Esto es para hacer una prueba de las ramas
-
-//Segunda Prueba
 
 export default App
