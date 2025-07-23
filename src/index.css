@@ -1,12 +1,15 @@
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
-}
-
-#root{
-    position: relative;
 }
 
 .no-scroll{
@@ -23,7 +26,16 @@
 .cart-vacio{
     display: flex;
     align-items: center;
-    position: absolute;
+}
+
+.filtrar-products{
+    height: 8vh;
+    background-color: #D4AF37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    gap: 5px;
 }
 
 img{

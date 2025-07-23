@@ -9,7 +9,7 @@ function ConteinerProductCategory({ nombre='', option }){
 
   return (
     <>
-      <h2 className={`tittle-product-category ${option && 'big'}`}>{nombre}</h2>
+      <h2 className={`tittle-product-category ${option && 'big'}`}>{option? 'Destacados': nombre}</h2>
       <div className={`conteiner-product-category ${option && 'big'}`}>
         {
           data

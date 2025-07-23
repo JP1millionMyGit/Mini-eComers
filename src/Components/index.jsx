@@ -1,6 +1,6 @@
 export { default as Button } from './Button/Button'
 export { default as NavBar } from './NavBar/NavBar'
-export { default as Icon } from './Icons/Icons'
+export { default as MyIcon } from './MyIcon/MyIcon'
 export { default as Portal } from './Portal/Portal'
 export { default as Menu } from './Menu/Menu'
 export { default as ProductCard } from './ProductCard/ProductCard'

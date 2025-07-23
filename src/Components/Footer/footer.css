@@ -1,7 +1,9 @@
-.content-footer-main{
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
+.footer-main::-webkit-scrollbar{
+  height: 0;
+}
+
+.footer-main{
+  aspect-ratio: 16/9;
   background-color: #af8b15;
   background-image: url('../Logo.webp');
   background-size: cover;
@@ -10,19 +12,8 @@
   overflow: auto;
   grid-auto-flow: column;
   gap: 10px;
-  padding-block: 10px;
   bottom: auto;
-}
-
-.content-footer-main::-webkit-scrollbar{
-  height: 0;
-}
-
-.footer-main{
-  position: relative;
-  aspect-ratio: 16/9;
-  bottom: 0;
-  margin-top: 37px;
+  margin-top: 20px;
 }
 
 .footer-main-section{

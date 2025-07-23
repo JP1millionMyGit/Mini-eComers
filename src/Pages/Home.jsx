@@ -1,4 +1,4 @@
-import { ConteinerProductCategory, ProductCard } from "../Components"
+import { ConteinerProductCategory } from "../Components"
 
 
 

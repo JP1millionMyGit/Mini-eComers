@@ -1,8 +1,8 @@
 import './menu.css'
-import { IconClose, IconDown, IconUp } from "../Icons/Icons";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { MyIcon } from '..';
 
 
 const Ul = motion.create('ul')
@@ -19,29 +19,29 @@ const menuItems = [
         to: '/cart'
       },
       {
-        label: 'Ver Categorías',
+        label: 'Categorías',
         children: [
           {
             label: 'Ropa',
-            to: '/'
+            to: '/products'
           },
           {
             label: 'Calzado',
-            to: '/'
+            to: '/products'
           },
           {
             label: 'Prendas',
-            to: '/'
+            to: '/products'
           },
           {
             label: 'Accesorios',
-            to: '/'
+            to: '/products'
           },
         ]
       },
       {
-        label: 'Productos al Azar',
-        to: '/cart'
+        label: 'Ver Productos al Azar',
+        to: '/products'
       }
     ]
   },
@@ -93,7 +93,7 @@ function Menu({ close }){
 
   return (
     <div onClick={close} className='overlay-menu'>
-      <IconClose click={()=>{close}} />
+      <MyIcon icon={'close'} size={'big'} className={'icon-close'} click={()=>{close}} />
       <div onClick={(e)=>{e.stopPropagation()}} className='menu'>
         <img src="Logo.webp" />
         <div className='tittle'>
@@ -110,8 +110,8 @@ function Menu({ close }){
                         <div>
                           <label className={openItem === item.label? 'after' : undefined} key={item.label} onClick={()=> toggleItem(item.label)}>
                             {item.label} 
-                            <AnimatePresence>
-                              {openItem === item.label? <IconUp /> : <IconDown />}
+                            <AnimatePresence mode='wait'>
+                              {openItem === item.label? <MyIcon key={'up'} icon={'up'} size={'small'} className={'icon-up'} /> : <MyIcon key={'down'} icon={'down'} size={'small'} className={'icon-down'} />}
                             </AnimatePresence>
                           </label>
                         </div>

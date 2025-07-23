@@ -14,8 +14,10 @@ function App() {
   const [menu, setMenu] = useState(false);
   const isMobile = useMediaQuery('(max-width: 550px)')
 
-  if(menu) document.body.classList.add('no-scroll')
-  else document.body.classList.remove('no-scroll');
+  isMobile? ()=>{
+    if(menu) document.body.classList.add('no-scroll')
+    else document.body.classList.remove('no-scroll');
+  }: ''
 
   const controlMenu = ()=>{
     setMenu(prev => !prev);
@@ -27,13 +29,13 @@ function App() {
   return (
     <>
       <Portal>
-        <AnimatePresence mode='popLayout'>
+        <AnimatePresence>
           {
             menu && 
             <Div
-              initial={isMobile? { x: '-100%' }: { y: '100%' }}
-              animate={isMobile? { x: 0 }: { y: 0 }}
-              exit={isMobile? { x: '-100%' }: { y: '100%' }}
+              initial={isMobile? { x: '-100%' }: { opacity: 0 }}
+              animate={isMobile? { x: 0 }: { opacity: 1 }}
+              exit={isMobile? { x: '-100%' }: { opacity: 0 }}
               transition={{ease: 'linear'}}
             >
               <Menu 
@@ -49,9 +51,9 @@ function App() {
       <AnimatePresence>
         <Div
           className='main-contain'
-          initial={{opacity: 0}}
-          animate={{opacity: 1}}
-          transition={{duration: .3}}
+          initial={{opacity: 0, y: 100}}
+          animate={{opacity: 1, y: 0}}
+          transition={{duration: .8}}
         >
           <Outlet />
         </Div>
@@ -66,8 +68,3 @@ function App() {
 }
 
 export default App
-
-
-// Cambio para comprobar el despliegue continuo
-
-//Lo anterior no funciono al parecer porque el repo era privado, probando otra vez con repo publico

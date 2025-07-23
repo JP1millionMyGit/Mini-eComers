@@ -1,9 +1,9 @@
 import './navBar.css'
 import { useNavigate } from 'react-router-dom'
-import IconMenu, { IconCart, IconSearch } from '../Icons/Icons'
-import Button from '../Button/Button';
 import { useContext } from 'react';
 import { CartContext } from '../../Context';
+import { MyIcon, Button } from '..';
+import { motion } from 'framer-motion';
 
 
 function NavBar({ menu }){
@@ -12,18 +12,18 @@ function NavBar({ menu }){
   const navigate = useNavigate();
   const Home = ()=> navigate('/');
   const Cart = ()=> navigate('/cart')
-
+  const IMG = motion.img
 
   return (
     <>
       <nav className='navBar-main'>
           <div className='actions'>
             <div className='IconMenu-Logo'>
-              <IconMenu click={menu}/>
-              <img onClick={Home} src="Logo.webp" alt="UrbanThreads" />
+              <MyIcon icon={'menu'} size={'big'} className='icon-menu' click={menu}/>
+              <IMG key={'Logo'} onClick={Home} src="Logo.webp" alt="UrbanThreads" whileTap={{scale: .9}} />
             </div>
             <div className='div-icon-cart'>
-              <IconCart click={Cart}/>
+              <MyIcon icon={'cart'} size={'big'} className='icon-cart' click={Cart}/>
               <label onClick={Cart} className='cantidad-products'>{cart}</label>
             </div>
           </div>
@@ -36,7 +36,7 @@ function NavBar({ menu }){
             <Button>Populares</Button>
           </nav>
           <div>
-            <IconSearch />
+            <MyIcon icon={'search'} size={'big'} className='icon-search'  />
           </div>
         </div>
       </nav>
