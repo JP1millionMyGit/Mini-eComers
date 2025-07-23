@@ -55,7 +55,6 @@
 
 .icon-search{
   flex-grow: 1;
-  position: relative;
 }
 
 div:has(>.icon-search){
