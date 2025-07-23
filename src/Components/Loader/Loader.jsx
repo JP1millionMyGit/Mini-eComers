@@ -13,7 +13,7 @@ function Loader(){
         animate={{transform: 'rotate3d(0, 0, 1, 360deg)'}}
         transition={{repeat: 10, repeatType: 'loop', ease: 'linear', duration: 5}}
       >
-        <Img src='Logo-icon.webp'
+        <Img src='Logo.webp'
           initial={{opacity: .8, backdropFilter: 'blur(2px)'}}
           animate={{opacity: 1}}
           transition={{repeat: Infinity, repeatType: 'mirror', ease: 'easeIn', duration: 1}}
