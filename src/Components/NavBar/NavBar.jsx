@@ -20,7 +20,7 @@ function NavBar({ menu }){
           <div className='actions'>
             <div className='IconMenu-Logo'>
               <IconMenu click={menu}/>
-              <img onClick={Home} src="Logo-icon.webp" alt="UrbanThreads" />
+              <img onClick={Home} src="Logo.webp" alt="UrbanThreads" />
             </div>
             <div className='div-icon-cart'>
               <IconCart click={Cart}/>
