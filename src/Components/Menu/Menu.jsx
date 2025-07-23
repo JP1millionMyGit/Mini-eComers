@@ -95,7 +95,7 @@ function Menu({ close }){
     <div onClick={close} className='overlay-menu'>
       <IconClose click={()=>{close}} />
       <div onClick={(e)=>{e.stopPropagation()}} className='menu'>
-        <img src="Logo.png" />
+        <img src="Logo.webp" />
         <div className='tittle'>
           <h2>Thread Menu</h2>
         </div>
