@@ -69,3 +69,5 @@ export default App
 
 
 // Cambio para comprobar el despliegue continuo
+
+//Lo anterior no funciono al parecer porque el repo era privado, probando otra vez con repo publico
