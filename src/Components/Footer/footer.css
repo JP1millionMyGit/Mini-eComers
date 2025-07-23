@@ -11,6 +11,7 @@
   grid-auto-flow: column;
   gap: 10px;
   padding-block: 10px;
+  bottom: auto;
 }
 
 .content-footer-main::-webkit-scrollbar{

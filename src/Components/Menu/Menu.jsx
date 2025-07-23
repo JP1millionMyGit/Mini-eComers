@@ -109,7 +109,10 @@ function Menu({ close }){
                       <>
                         <div>
                           <label className={openItem === item.label? 'after' : undefined} key={item.label} onClick={()=> toggleItem(item.label)}>
-                            {item.label} {openItem === item.label? <IconUp /> : <IconDown />}
+                            {item.label} 
+                            <AnimatePresence>
+                              {openItem === item.label? <IconUp /> : <IconDown />}
+                            </AnimatePresence>
                           </label>
                         </div>
                         <AnimatePresence>

@@ -61,10 +61,6 @@
     margin-block: 10px;
 }
 
-.menu a{
-    font-size: 1.05em;
-}
-
 .menu a:link, .menu a:visited{
     color: currentColor;
 }

@@ -35,7 +35,9 @@ function NavBar({ menu }){
             <Button>Visto Recién</Button>
             <Button>Populares</Button>
           </nav>
-          <IconSearch />
+          <div>
+            <IconSearch />
+          </div>
         </div>
       </nav>
     </>

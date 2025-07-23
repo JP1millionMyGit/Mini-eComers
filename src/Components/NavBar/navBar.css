@@ -23,7 +23,7 @@
   align-items: center;
   min-height: 30px;
   background-color: #C9A32a;
-  gap: 10px;
+  gap: 5px;
 }
 
 .actions{
@@ -55,6 +55,23 @@
 
 .icon-search{
   flex-grow: 1;
+  position: relative;
+}
+
+div:has(>.icon-search){
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+div:has(>.icon-search)::after{
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #000a;
+  position: absolute;
+  left: -2px;
+  top: 0;
 }
 
 .div-icon-cart{
