@@ -7,13 +7,13 @@ function Cart(){
 
   if(cart === 0) return(
     <div className="cart-vacio">
-      <img src="CartVacio.jpg" />
+      <img src="CartVacio.webp" />
     </div>
   )
 
   return (
     <h1>
-    Carrito
+      Carrito
     </h1>
   )
 }
